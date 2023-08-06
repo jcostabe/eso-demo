@@ -95,6 +95,12 @@ or if you have created it previously
 POLICY_ARN=$(aws iam list-policies --query 'Policies[?PolicyName==`SecretManagerReadPolicy`].Arn' --output text)
 ```
 
+### Create an IAM OIDC provider for the cluster
+
+```sh
+eksctl utils associate-iam-oidc-provider --cluster=${CLUSTER_NAME} --approve
+```
+
 ### Create IAM Service Account
 
 ```sh
