@@ -4,6 +4,7 @@ Demo project to use `External Secret Operator` using EKS cluster
 
 # Prerequisites
 
+- AWS account
 - EKS  Cluster
 
 # Table of Contents
